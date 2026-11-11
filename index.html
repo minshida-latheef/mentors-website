@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MentorHub — Connect with Experts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>MentorHub</h1>
+    <p>1-on-1 guidance from experienced industry mentors.</p>
+  </header>
+
+  <main>
+    <!-- Category Filter -->
+    <div class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="tech">Tech</button>
+      <button class="filter-btn" data-category="design">Design</button>
+      <button class="filter-btn" data-category="career">Career</button>
+    </div>
+
+    <!-- Mentor Cards Grid -->
+    <section class="mentor-grid" id="mentorGrid">
+      <div class="card" data-category="tech">
+        <div class="avatar">AR</div>
+        <h3>Aarav Sharma</h3>
+        <span class="badge">Tech</span>
+        <p class="role">Senior Web Developer</p>
+        <p class="bio">Helps beginners master HTML, CSS, JavaScript, and full-stack projects.</p>
+        <button class="book-btn" data-mentor="Aarav Sharma">Book Session</button>
+      </div>
+
+      <div class="card" data-category="design">
+        <div class="avatar">PN</div>
+        <h3>Priya Nair</h3>
+        <span class="badge">Design</span>
+        <p class="role">Lead UI/UX Designer</p>
+        <p class="bio">Guides designers on portfolio reviews, user research, and clean interfaces.</p>
+        <button class="book-btn" data-mentor="Priya Nair">Book Session</button>
+      </div>
+
+      <div class="card" data-category="career">
+        <div class="avatar">RK</div>
+        <h3>Rohan Kapoor</h3>
+        <span class="badge">Career</span>
+        <p class="role">Tech Recruiter & Coach</p>
+        <p class="bio">Specializes in resume building, mock interviews, and job search strategy.</p>
+        <button class="book-btn" data-mentor="Rohan Kapoor">Book Session</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple Booking Popup -->
+  <div class="modal hidden" id="bookingModal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Book a Session</h2>
+      <p>Enter your name to request a free 30-minute intro call.</p>
+      <input type="text" id="menteeName" placeholder="Your Full Name" required>
+      <div class="modal-actions">
+        <button id="confirmBtn">Confirm</button>
+        <button id="closeBtn" class="secondary">Cancel</button>
+      </div>
+      <p id="statusMsg"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 MentorHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
