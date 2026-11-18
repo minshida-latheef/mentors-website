@@ -30,5 +30,8 @@ A simple, responsive mentors directory website built with vanilla \*\*HTML\*\*, 
 
 Double-click \*\*`index.html`\*\* to open the website in your browser.
 
+[click to view](https://minshida-latheef.github.io/mentors-website/)
+
+
 
 
